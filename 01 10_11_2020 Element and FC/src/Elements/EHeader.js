@@ -9,7 +9,7 @@ const EHeader =
       padding: 5
     }}>
     <center>
-      <h1>Hello World!</h1>
+      <h1>Hello World!2</h1>
       <h3 className="nirSty">Ruppin</h3>
     </center>
   </div>;
