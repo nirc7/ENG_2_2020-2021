@@ -17,13 +17,7 @@ export default class CCLogin extends Component {
   btnLogin = () => {
     let check = Users.find((user) =>
       user.email === this.state.email && user.pass === this.state.pass);
-
-    if (check !== undefined) {
-      this.setState({ status: 'hello ' + check.name + ' u r logged in ' });
-    }
-    else {
-      this.setState({ status: 'not logged in' });
-    }
+    this.props.sendData2Parent(check);
   }
 
   chgEmail = (e) => {
